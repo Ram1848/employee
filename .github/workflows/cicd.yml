@@ -37,7 +37,8 @@ jobs:
           git config --global user.name "Ram1848"
           git config --global user.email "2300032273@kluniversity.in"
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages (gh-pages)
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run deploy
+
